@@ -152,3 +152,5 @@ install_lazyvim
 # Install custom configurations
 install_mynvim
 
+# Installation done!
+echo mynvim installation is done!
