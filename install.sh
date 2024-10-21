@@ -93,8 +93,8 @@ install_lazyvim() {
   which nvim >>/dev/null
 
   LAZYVIM_INSTALL_ERR_MSG="Backup current nvim setting"
-  check_exist_and_move $HOME/.config/nvim /tmp/nvim.bak
-  check_exist_and_move $HOME/.local/share/nvim /tmp/nvim.bak
+  check_exist_and_move $HOME/.config/nvim /tmp/config_nvim.bak
+  check_exist_and_move $HOME/.local/share/nvim /tmp/local_nvim.bak
 
   LAZYVIM_INSTALL_ERR_MSG="Git clone LazyVim to $HOME/.config/nvim"
   git clone https://github.com/LazyVim/starter $HOME/.config/nvim --depth=1
