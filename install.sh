@@ -25,6 +25,8 @@ check_exist_and_move() {
   file_to_move=$1
   file_move_to=$2
 
+  echo ">> Backup $file_to_move to $file_move_to <<"
+
   if [[ -e $file_move_to ]]; then
     rm -rf $file_move_to
   fi
@@ -151,6 +153,9 @@ install_lazyvim
 
 # Install custom configurations
 install_mynvim
+
+# Call nvim to run installation
+nvim
 
 # Installation done!
 echo mynvim installation is done!
